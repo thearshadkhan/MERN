@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid 3</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+      }
+      .container {
+        /* width: 80%; */
+        height: 100vh;
+        /* margin: 50px auto; */
+        display: grid;
+        /* background-color: rgb(157, 216, 255); */
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 1.5fr 1.2fr 0.8fr;
+      }
+      .navbar {
+        grid-column: 1/-1;
+        background-color: rgb(0, 190, 190);
+      }
+      .sidebar {
+        grid-row: 2/5;
+        background-color: aqua;
+      }
+      .main {
+        grid-column: 2/5;
+        background-color: rgb(0, 196, 196);
+      }
+      .content {
+        background-color: rgb(0, 190, 190);
+      }
+      .footer {
+        grid-column: 2/-1;
+        background-color: rgb(0, 190, 190);
+      }
+      @media only screen and (max-width: 550px) {
+        .container {
+          grid-template-columns: 1fr;
+          grid-template-rows: 0.3fr 0.3fr 2.2fr 1.2fr 1.2fr 1.2fr 0.3fr;
+        }
+        .navbar {
+          grid-column: 1/-1;
+        }
+        .sidebar {
+          grid-column: 1/-1;
+          grid-row: 2/3;
+        }
+        .main {
+          grid-column: 1/-1;
+        }
+        .content {
+          grid-column: 1/-1;
+        }
+        .footer {
+          grid-column: 1/-1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex navbar">Navbar</div>
+      <div class="flex sidebar">Sidebar</div>
+      <div class="flex main">Main</div>
+      <div class="flex content">Content1</div>
+      <div class="flex content">Content2</div>
+      <div class="flex content">Content3</div>
+      <div class="flex footer">Footer</div>
+    </div>
+  </body>
+</html>

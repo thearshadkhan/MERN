@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 4</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 10px;
+        }
+        body{
+            background-image: linear-gradient(to right,rgb(156, 0, 204), rgb(0, 197, 171));
+        }
+        h1{
+            text-align: center;
+            margin: 20px auto;
+            color: aliceblue;
+        }
+
+        .container{
+            display: grid;
+            width: 80%;
+            margin: 20px auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .card{
+            /* width: 400px; */
+            height: 500px;
+            padding: 10px;
+            background-color: rgb(212, 212, 212);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .card>img{
+            width: 100%;
+        }
+        .card p{
+            text-align: center;
+        }
+        .card a{
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: larger;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: black;
+        }
+        @media only screen and (max-width: 760px){
+            .container{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media only screen and (max-width: 550px){
+            .container{
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Cards</h1>
+    <div class="container">
+        <div class="card">
+            <img src="/Images/1.jpg" alt="">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio laudantium quos ipsa! Nobis hic impedit quas, reiciendis officiis vero.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="card">
+            <img src="/Images/2.jpg" alt="">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio laudantium quos ipsa! Nobis hic impedit quas, reiciendis officiis vero.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="card">
+            <img src="/Images/3.jpg" alt="">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio laudantium quos ipsa! Nobis hic impedit quas, reiciendis officiis vero.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="card">
+            <img src="/Images/4.jpg" alt="">
+            <h2>Card 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio laudantium quos ipsa! Nobis hic impedit quas, reiciendis officiis vero.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="card">
+            <img src="/Images/5.jpg" alt="">
+            <h2>Card 5</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio laudantium quos ipsa! Nobis hic impedit quas, reiciendis officiis vero.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="card">
+            <img src="/Images/6.jpg" alt="">
+            <h2>Card 6</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio laudantium quos ipsa! Nobis hic impedit quas, reiciendis officiis vero.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="card">
+            <img src="/Images/7.jpg" alt="">
+            <h2>Card 7</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio laudantium quos ipsa! Nobis hic impedit quas, reiciendis officiis vero.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="card">
+            <img src="/Images/8.jpg" alt="">
+            <h2>Card 8</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio laudantium quos ipsa! Nobis hic impedit quas, reiciendis officiis vero.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="card">
+            <img src="/Images/9.jpg" alt="">
+            <h2>Card 9</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod distinctio laudantium quos ipsa! Nobis hic impedit quas, reiciendis officiis vero.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+</body>
+</html>

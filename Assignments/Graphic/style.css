@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3d2b2;
+    color: #5a3118;
+}
+
+header {
+    background-color: #a04e24;
+    padding: 25px;
+    position: fixed;
+    /* margin-bottom: 50px; */
+    width: 100vw;
+    /* border-radius: 0px 0PX 20px 20px; */
+    z-index: 2;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f3d2b2;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 5px;
+    
+}
+nav ul li a:hover{
+    text-decoration: none;
+    background-color: #f3d2b2;
+    color: #5a2300;
+}
+
+nav ul li a.active{
+    text-decoration: none;
+    background-color: #f3d2b2;
+    color: #5a2300;
+}
+.hero {
+    text-align: center;
+    /* margin: 20px 0; */
+}
+
+.hero img {
+    /* height: 730px; */
+    /* width: 100%; */
+    /* height: auto; */
+    object-fit: cover;
+    margin-top: 70px;
+    max-width: 1340px;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #f5dcc4;
+    border-radius: 10px;
+}
+
+h2, h3 {
+    color: #a04e24;
+}
+
+ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #a04e24;
+    margin-top: 20px;
+    border-left: 4px solid #a04e24;
+    padding-left: 10px;
+}
+
+a {
+    color: #a04e24;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.content h2, .content h3 {
+    color: #a04e24;
+    margin-top: 20px;
+}
+
+ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #a04e24;
+}
+
+blockquote {
+    font-style: italic;
+    color: #a04e24;
+    margin-top: 20px;
+    border-left: 4px solid #a04e24;
+    padding-left: 10px;
+}
+
+
+
+form {
+    margin-top: 20px;
+    display: block;
+}
+
+label {
+    font-weight: bold;
+    color: #a04e24;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #a04e24;
+    border-radius: 5px;
+    display: block;
+}
+
+button {
+    background-color: #a04e24;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+button:hover {
+    background-color: #872f19;
+}
+
+strong {
+    color: #a04e24;
+}
+
+
+
+a {
+    color: #a04e24;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* The CSS below should be added to your existing styles.css file */
+
+.gallery {
+    padding: 20px;
+    max-width: 1320px;
+    margin: 0 auto;
+    background-color: #f5dcc4;
+    border-radius: 10px;
+}
+
+.gallery h2 {
+    text-align: center;
+    color: #a04e24;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.image-row {
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+}
+
+.image-row img {
+    width: 40%;
+    margin: 0 2.5%;
+    display: inline;
+    vertical-align: top;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.video-gallery {
+    padding: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: #f5dcc4;
+    border-radius: 10px;
+    
+}
+
+.video-gallery h2 {
+    margin-top: 70px;
+    text-align: center;
+    color: #a04e24;
+    margin-bottom: 20px;
+}
+
+.video-row {
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+    z-index: -1;
+}
+
+.video-row video {
+    width: 40%;
+    margin: 0 2.5%;
+    display: inline;
+    vertical-align: top;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
