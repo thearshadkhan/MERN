@@ -7,12 +7,15 @@
     <style>
         *{
             margin: 0;padding: 0;box-sizing: border-box;
+            border-radius: 6px;
 
         }
         .container{
             width: 95%;
             margin: 20px auto;
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
             gap: 50px;
         }
@@ -24,6 +27,43 @@
             padding: 10px 20px;
             text-align: center;
         }
+        img{
+          width: 100%;
+          height: auto;
+        }
+        .gallery{
+          display: flex;
+          /* flex-direction: column; */
+          gap: 15px;
+          
+        }
+        .row{
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          flex-wrap: wrap;
+        }
+        .col{
+          display: flex; 
+          /* gap: 15px; */
+        }
+        button{
+          background-color: black;  
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          
+        }
+        button:hover{
+          background-color: rgb(37, 37, 37);
+        }
+
+        @media only screen and (max-width: 768px){
+          .gallery{
+            flex-direction: column;
+          }
+        }
+
     </style>
   </head>
   <body>
@@ -31,27 +71,30 @@
       <div class="heading">
         <h1>Image Gallery</h1>
       </div>
-      <div class="row">
-        <div class="col"><img src="/Images/1.jpg" alt=""></div>
-        <div class="col"><img src="/Images/2.jpg" alt=""></div>
-        <div class="col"><img src="/Images/3.jpg" alt=""></div>
-        <div class="col"><img src="/Images/4.jpg" alt=""></div>
-        <div class="col"><img src="/Images/5.jpg" alt=""></div>
+      <div class="gallery">
+        <div class="row">
+          <div class="col"><img src="/Images/1.jpg" alt=""></div>
+          <div class="col"><img src="/Images/2.jpg" alt=""></div>
+          <div class="col"><img src="/Images/3.jpg" alt=""></div>
+          <div class="col"><img src="/Images/4.jpg" alt=""></div>
+          <div class="col"><img src="/Images/5.jpg" alt=""></div>
+        </div>
+        <div class="row">
+          <div class="col"><img src="/Images/6.jpg" alt=""></div>
+          <div class="col"><img src="/Images/7.jpg" alt=""></div>
+          <div class="col"><img src="/Images/8.jpg" alt=""></div>
+          <div class="col"><img src="/Images/9.jpg" alt=""></div>
+          <div class="col"><img src="/Images/10.jpg" alt=""></div>
+        </div>
+        <div class="row">
+          <div class="col"><img src="/Images/11.jpg" alt=""></div>
+          <div class="col"><img src="/Images/12.jpg" alt=""></div>
+          <div class="col"><img src="/Images/13.jpg" alt=""></div>
+          <div class="col"><img src="/Images/14.jpg" alt=""></div>
+          <div class="col"><img src="/Images/15.jpg" alt=""></div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col"><img src="/Images/6.jpg" alt=""></div>
-        <div class="col"><img src="/Images/7.jpg" alt=""></div>
-        <div class="col"><img src="/Images/8.jpg" alt=""></div>
-        <div class="col"><img src="/Images/9.jpg" alt=""></div>
-        <div class="col"><img src="/Images/10.jpg" alt=""></div>
-      </div>
-      <div class="row">
-        <div class="col"><img src="/Images/11.jpg" alt=""></div>
-        <div class="col"><img src="/Images/12.jpg" alt=""></div>
-        <div class="col"><img src="/Images/13.jpg" alt=""></div>
-        <div class="col"><img src="/Images/14.jpg" alt=""></div>
-        <div class="col"><img src="/Images/15.jpg" alt=""></div>
-      </div>
+      <button>Load More</button>
     </div>
   </body>
 </html>
