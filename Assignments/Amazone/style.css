@@ -5,18 +5,27 @@
     box-sizing: border-box;
     /* border: border-box; */
 }
-
+body{
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    /* background-repeat: no-repeat; */
+}
 .navbar{
     height: 60px;
-    background-color: #0f1111;
+    background-color: #ffffff;
     color: white;
 }
 .nav-logo{
     height: 50px;
     width: 60px;
+    
 }
 .logo{
-    background-image: url('./amazone.png');
+    background-image: url(./amazone.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 50px;
     width: 100%;
+    margin: 0px 10px;
+    
 }
